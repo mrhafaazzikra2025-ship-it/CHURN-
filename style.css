@@ -1,0 +1,120 @@
+/* Import Modern Corporate Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html, body, [data-testid="stAppViewContainer"] {
+    font-family: 'Inter', sans-serif;
+    background-color: #0F172A; /* Slate 900 Background */
+}
+
+/* Header Styling */
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #38BDF8 0%, #818CF8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.2rem;
+}
+
+.sub-title {
+    color: #94A3B8;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Modern Corporate Cards */
+.corp-card {
+    background: #1E293B; /* Slate 800 */
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.corp-card:hover {
+    transform: translateY(-2px);
+    border-color: #4F46E5; /* Indigo Accent on Hover */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Critical Risk Card & Animations */
+.risk-card-critical {
+    background: linear-gradient(135deg, #451A03 0%, #7F1D1D 100%);
+    border: 1px solid #DC2626;
+    border-radius: 12px;
+    padding: 20px;
+    color: #FEE2E2;
+    font-weight: 500;
+    animation: pulse border 2s infinite;
+}
+
+/* Metric Display Framework */
+.metric-val {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #F8FAFC;
+    margin: 10px 0;
+}
+
+.metric-label {
+    color: #94A3B8;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Prescriptive Actions Layout */
+.action-item {
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border-left: 4px solid transparent;
+    transition: transform 0.2s;
+}
+
+.action-item:hover {
+    transform: scale(1.01);
+}
+
+.action-high {
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+    border-left: 4px solid #F59E0B;
+}
+
+.action-info {
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-left: 4px solid #3B82F6;
+}
+
+/* Custom Styled Primary Button */
+div.stButton > button:first-child {
+    background: linear-gradient(135deg, #4F46E5 0%, #06B6D4 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+div.stButton > button:first-child:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
+    color: white;
+}
